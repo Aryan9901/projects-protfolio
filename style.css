@@ -4,6 +4,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	font-family: Gilroy;
 }
 
 body,
@@ -16,6 +17,7 @@ html {
 	width: 100%;
 	background-color: #111;
 	position: relative;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
 }
 #elem-div {
 	height: 100vh;
@@ -44,8 +46,9 @@ html {
 .elems h2 {
 	transform: rotate(-90deg);
 	position: absolute;
-	color: rgb(221, 221, 221);
+	color: hsl(0, 0%, 87%);
 	font-family: voyage;
+	font-family: Gilroy;
 	width: 600px;
 	height: 190px;
 	z-index: 9999;
@@ -58,6 +61,7 @@ html {
 	left: 0px;
 	transform-origin: left top;
 	/* background-color: red; */
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 }
 #image {
 	position: absolute;
