@@ -26,15 +26,50 @@ html {
 	white-space: nowrap;
 	z-index: 999;
 	scroll-behavior: smooth;
+	/* background-color: brown; */
 }
 #elem-div::-webkit-scrollbar {
 	display: none;
 }
-.elem {
+.elems {
 	height: 100%;
 	width: 15vw;
 	display: inline-block;
 	border-right: 1px solid #a4a4a4;
 	margin-left: -5px;
 	text-decoration: none;
+	/* background-color: blue; */
+	position: relative;
+}
+.elems h2 {
+	transform: rotate(-90deg);
+	position: absolute;
+	color: rgb(221, 221, 221);
+	font-family: voyage;
+	width: 600px;
+	height: 190px;
+	z-index: 9999;
+	font-weight: 300;
+	font-size: 60px;
+	display: flex;
+	align-items: center;
+	/* justify-content: start; */
+	bottom: -28%;
+	left: 0px;
+	transform-origin: left top;
+	/* background-color: red; */
+}
+#image {
+	position: absolute;
+	height: 250px;
+	width: 350px;
+	overflow: hidden;
+	z-index: 9;
+	/* background-color: yellow; */
+	left: 0;
+	top: 0;
+	background-position: center;
+	transform: rotate(4deg);
+	background-size: cover;
+	transition: height 0.5s, width 0.5s, background-image 0.5s, transform cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 }
