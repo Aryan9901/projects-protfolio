@@ -29,6 +29,8 @@ html {
 	z-index: 999;
 	scroll-behavior: smooth;
 	/* background-color: brown; */
+	/* transform: translateX(-50%); */
+	/* animation: scroll 10s linear infinite; */
 }
 #elem-div::-webkit-scrollbar {
 	display: none;
@@ -42,6 +44,7 @@ html {
 	text-decoration: none;
 	/* background-color: blue; */
 	position: relative;
+	overflow: hidden;
 }
 .elems h2 {
 	transform: rotate(-90deg);
@@ -65,6 +68,7 @@ html {
 }
 #image {
 	position: absolute;
+
 	height: 250px;
 	width: 350px;
 	overflow: hidden;
@@ -75,5 +79,42 @@ html {
 	background-position: center;
 	transform: rotate(4deg);
 	background-size: cover;
-	transition: height 0.5s, width 0.5s, background-image 0.5s, transform cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+	user-select: none;
+	transition: height 0.8s, width 0.8s, background-image 0.5s, transform cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+}
+/* cursor */
+#cursor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	/* background-color: yellow; */
+	z-index: 999999;
+	border: 3px solid red;
+	user-select: none;
+	pointer-events: none;
+}
+#curcent {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: orangered;
+	z-index: 99999;
+	user-select: none;
+	pointer-events: none;
+}
+#overlay {
+	position: absolute;
+	bottom: 0%;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
 }
